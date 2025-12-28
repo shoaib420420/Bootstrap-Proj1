@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root {
+:root{
     --primary-color: #2563eb;
     /* Modern Royal Blue */
     --secondary-color: #1e293b;
@@ -21,7 +21,7 @@
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-body {
+body{
     font-family: 'Poppins', sans-serif;
     color: var(--text-dark);
     background-color: var(--light-bg);
@@ -33,7 +33,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
     font-weight: 600;
     color: var(--secondary-color);
 }
@@ -78,8 +78,8 @@ h6 {
 /* Carousel / Hero */
 .carousel-item {
     height: 80vh;
-    /* Full viewport height look */
-    min-height: 500px;
+    min-height: 500px;    /* Optional fallback */
+    max-height: 100vh;
 }
 
 .carousel-item img {
